@@ -1,0 +1,202 @@
+/*================================layout================================================*/
+/*版型=============================*/
+.header_box{ width:100%; clear:both; background:url(../images/banner.jpg) center bottom no-repeat; background-size:cover; }
+.header{height:650px; margin:0 auto; position:relative; }
+.header:after{ display:block; content:""; width:100%; height:100%; background:rgba(0,0,0,0.5);}
+
+/*小於768*/
+@media only screen and (max-width:767px){
+.header{ height:480px; background-size:cover; background-position: left bottom;}
+}
+
+
+.container_box{ clear:both;}
+.container{ width:100%; margin:0 auto; background: url(../images/bg.png) repeat; }
+.footer_box{ clear:both;background:#554236;}
+.footer{ max-width:1200px; margin:0 auto; height:30px; line-height:30px; padding:0 15px; }
+.footer p{ display: inline-block;  color:#fff; font-size: 13px;}
+.footer p.right{ float:right; }
+.footer a{ color: #fff;}
+.container section{}
+.container section .inner{ max-width:1200px; margin:0px auto; padding:60px 0;}
+.container section .inner.size2{max-width:1600px; margin:0px auto; padding:60px 0;}
+
+.container section.style_1{ background:#efeede;}
+.container section.style_1 .inner{ background:url(../images/bg_2.svg) center bottom no-repeat; background-size:auto 155px;}
+.container section.style_2{ background:#fbf9ef;}
+
+
+/*小於768*/
+@media only screen and (max-width:767px){
+.header_box{ background-position:center left; background-size:cover;}
+.container section .inner{ padding:30px;}
+.container section.style_1 .inner{}
+.container .inner.size2{ display:none;}
+}
+
+
+/*小於320*/
+@media only screen and (max-width:320px){
+	.footer{ height: auto; padding: 10px; text-align: left;}
+	.footer p.right{ float: none;}
+}
+
+
+/*=================header===================*/
+
+
+/*選單====================================*/
+
+.header h1.logo{ position:absolute; left:50%; top:50px; margin-left:-42px;text-align:center;}
+.header h1.logo a{ display:block; width:84px; height:285px; background:url(../images/logo.png) center center no-repeat; background-size: 84px auto; text-indent:-9999px; }
+.header p.slogan{ width:380px; height:70px; background:url(../images/slogan.png) center center no-repeat; position:absolute; left:50%; margin-left:-190px; bottom:180px; z-index:10;}
+
+.header .nav_1{ width:100%; height:90px; padding-top:32px; background:rgba(0,0,0,0.8); position:absolute; left:0px; bottom:0px;}
+.header .nav_1 .menu_1{ width:370px; margin:0 auto; }
+.header .nav_1 .menu_1 a{ display:block; height:35px; line-height:35px; float:left; margin-right:20px; padding-left:30px; color:#fff; text-align:center; letter-spacing:2px; position:relative;}
+.header .nav_1 .menu_1 a:nth-last-of-type(1){ margin-right:0px;}
+.header .nav_1 .menu_1 a:hover{ color:#c4a476;}
+.header .nav_1 .menu_1 a:before{display:block; content:""; width:25px; height:25px; position:absolute; left:0px; top:2px;}
+.header .nav_1 .menu_1 a:nth-of-type(1):before{ background:url(../images/icon_menu.svg) left top no-repeat; background-size:25px;}
+.header .nav_1 .menu_1 a:nth-of-type(2):before{ background:url(../images/icon_menu.svg) left center no-repeat; background-size:25px;}
+.header .nav_1 .menu_1 a:nth-of-type(3):before{background:url(../images/icon_menu.svg) left bottom no-repeat;  background-size:25px;}
+
+
+.menu_2{width:100%; background:#403b2d; display:none;}
+.menu_2 a{display:block; height:45px; line-height:45px; text-align:center; color:#d7b98e; border-bottom:1px solid #b18147; position:relative;}
+.menu_2 a:before{display:block; content:""; width:25px; height:25px; position:absolute; left:50%; margin-left:-25%; top:8px;}
+.menu_2 a:nth-of-type(1):before{ background:url(../images/icon_menu.svg) left top no-repeat; background-size:25px;}
+.menu_2 a:nth-of-type(2):before{ background:url(../images/icon_menu.svg) left center no-repeat; background-size:25px;}
+.menu_2 a:nth-of-type(3):before{background:url(../images/icon_menu.svg) left bottom no-repeat;  background-size:25px;}
+
+
+
+
+/*小於768*/
+@media only screen and (max-width:767px){
+.header .nav_1{ display:none;}
+.header p.slogan{ display:none;}
+
+.header .nav_1 .menu_1{ display:none;}
+
+.menu_2{ display:block; }
+.menu_2 a{ }
+}
+
+
+
+
+/*================container===================*/
+
+.block_1{}
+.block_1 .block_title{ margin-bottom:30px;}
+.block_1 .block_title h2{ width:218px; height:77px;text-indent:-999px;}
+.block_1 .block_title h2.title_1{ background:url(../images/icon_title_1.svg) center center no-repeat; background-size:218px auto;}
+.block_1 .block_title h2.title_2{background:url(../images/icon_title_2.svg) center center no-repeat; background-size:218px auto;}
+.block_1 .block_title h2.title_3{background:url(../images/icon_title_3.svg) center center no-repeat; background-size:218px auto;}
+
+.block_1 .block_title h2.title_4{background:url(../images/icon_title_3.svg) center center no-repeat; background-size:218px auto;}
+
+
+
+/*part_pictxt_1==================*/
+.part_pictxt_1{ clear:both;}
+.part_pictxt_1 .piece{ margin-bottom:60px;}
+.part_pictxt_1 .piece:last-of-type{ margin-bottom:0px;}
+.part_pictxt_1 .piece p.pic{ width:200px; height:200px; float:left; margin-right:60px; overflow:hidden; border-radius:50%;}
+.part_pictxt_1 .piece p.pic.style_1{ width:600px; height:400px; border-radius:0px;}/*景點介紹用*/ 
+.part_pictxt_1 .piece p.pic img{ width:auto; height:100%;} 
+.part_pictxt_1 .piece h3{ display:inline-block; margin-bottom:20px; padding-left:35px; color:#cb1b45;  position:relative;}
+.part_pictxt_1 .piece h3.style_1{ padding-left:0px;} /*景點介紹用*/
+.part_pictxt_1 .piece h3 i.icon_sub_title{ display:block; width:30px; height:30px; background:url(../images/icon_sub_title.svg) center center no-repeat; background-size:30px 30px; position:absolute; left:0px; top:-5px;}
+.part_pictxt_1 .piece p.summary{ padding-left:260px;}
+
+
+/*小於768*/
+@media only screen and (max-width:767px){
+.part_pictxt_1 .piece p.pic{float:none; margin:0 auto; margin-bottom:30px;}
+.part_pictxt_1 .piece p.summary{ padding-left:0px;}
+.part_pictxt_1 .piece p.pic.style_1{ width:100%; height:auto; }
+.part_pictxt_1 .piece p.pic.style_1 img{ width:100%; height:auto;}
+
+}
+
+
+/*part_pictxt_2==================*/
+.part_pictxt_2{ clear:both;}
+.part_pictxt_2 .piece{ width:48%; margin-right:4%; float:left;}
+.part_pictxt_2 .piece:last-of-type{margin-right:0;}
+.part_pictxt_2 .piece p.pic{ width:200px; height:200px; float:left; margin-right:30px; overflow:hidden; border-radius:50%;}
+.part_pictxt_2 .piece p.pic img{ width:auto; height:100%;}
+.part_pictxt_2 .piece h3{ margin-left:230px; margin-bottom:10px; padding-bottom:10px; color:#cb1b45; border-bottom:1px solid #928c61;}
+.part_pictxt_2 .piece p.summary{}
+
+
+/*小於768*/
+@media only screen and (max-width:767px){
+.part_pictxt_2 .piece{ width:100%; float:none; margin-bottom:50px;}
+.part_pictxt_2 .piece p.pic{ float:none; margin:0 auto; margin-bottom:30px;}
+.part_pictxt_2 .piece h3{ margin-left:0px;}
+}
+
+
+/*part_thumb_1==================*/
+.part_thumb_1{ width:80%; margin:0 auto;}
+.part_thumb_1 .piece{ width:40%; float:left; margin-right:8%; margin-bottom:50px; }
+.part_thumb_1 .piece:nth-of-type(2n){float:right; margin-right:0%;}
+.part_thumb_1 .piece a{ display: block; }
+
+.part_thumb_1 .piece a h3{ height:60px; line-height:60px; padding-left:25px; margin-bottom: 20px; background: url(../images/part_thumb1_titile_bg.svg) no-repeat left center; background-size: 70px auto; border-bottom: 3px solid #893448; transition: all .3s;}
+.part_thumb_1 .piece p.pic{width:100%; height:0px; padding-bottom:63%; overflow:hidden; }
+.part_thumb_1 .piece p.pic img{ width:100%; height:auto;transform:scale(0.95); transition: all .3s;}
+/*hover*/
+.part_thumb_1 .piece p.pic:hover img{ opacity:0.9;transform:scale(1);}
+.part_thumb_1 .piece a:hover h3{ font-size: 21px;}
+
+
+/*小於768*/
+@media only screen and (max-width:767px){
+.part_thumb_1{ width:100%;}
+.part_thumb_1 .piece{ width:100%; float:none; margin-right:0px;}
+.part_thumb_1 .piece:nth-of-type(2n){ float:none;}
+}
+
+
+
+/*part_thumb_2==================*/
+.part_thumb_2{ max-width:900px; margin:0 auto;padding-top:50px; }
+.part_thumb_2 .box_1{ width:300px; float:left;}
+.part_thumb_2 .box_1 .item{width:300px; position:relative;}
+.part_thumb_2 .box_1 .item:after{ display:block; content:""; width:100%; height:60px; background-image:linear-gradient(to bottom,  rgba(229,229,229,0) 0%,rgba(0,0,0,0.9) 100%); position:absolute; left:0px; bottom:0px;}
+.part_thumb_2 .box_1 .item img{ width:100%; height:auto;}
+.part_thumb_2 .box_1 .item p{ color:#fff; position:absolute; right:10px; bottom:5px; z-index:3;}
+.part_thumb_2 .box_2{ width:600px; float:left; position:relative;}
+.part_thumb_2 .box_2:after{ display:block; content:""; width:100%; height:90px; background-image:linear-gradient(to bottom,  rgba(229,229,229,0) 0%,rgba(0,0,0,0.9) 100%); position:absolute; left:0px; bottom:0px;}
+.part_thumb_2 .box_2 img{ width:100%; height:auto;}
+.part_thumb_2 .box_2 p{ color:#fff; position:absolute; right:10px; bottom:5px;  z-index:3;}
+
+
+/*小於768*/
+@media only screen and (max-width:767px){
+.part_thumb_2 .box_1{ width:100%; float:none;}
+.part_thumb_2 .box_1 .item{ width:100%;}
+.part_thumb_2 .box_2{ width:100%; float:none;}
+}
+
+
+/*map*/
+
+.mapcontent{ position: relative; height: 0; padding-bottom: 56.25%; overflow: hidden;}
+.mapcontent iframe,
+.mapcontent object,
+.mapcontent embed {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+
+
+
+
+
+
+
+
+
+
